@@ -7,6 +7,7 @@ import AnimatedFunctionsProps from "./lessons/AnimatedFunctionsProps";
 import AnimatedDotValueXY from "./lessons/Animated.ValueXY";
 import ParallelAnimation from "./lessons/ParallelAnimation";
 import SequenceAnimation from "./lessons/SequenceAnimation";
+import LoopAnimation from "./lessons/LoopAnimation";
 
 export default function App() {
   return (
@@ -19,7 +20,8 @@ export default function App() {
       {/* <AnimatedFunctionsProps /> */}
       {/* <AnimatedDotValueXY /> */}
       {/* <ParallelAnimation /> */}
-      <SequenceAnimation />
+      {/* <SequenceAnimation /> */}
+      <LoopAnimation />
     </View>
   );
 }

@@ -9,7 +9,7 @@ const SequenceAnimation = () => {
     Animated.sequence([
       // Translate animateion
       Animated.timing(translateXValue, {
-        toValue: 100, // Translate 200 units horizontally
+        toValue: 200, // Translate 200 units horizontally
         duration: 1000,
         useNativeDriver: true,
       }),
