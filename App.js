@@ -3,7 +3,7 @@ import { StyleSheet, View } from "react-native";
 import FadeInView from "./lessons/FadeInView_1";
 import Interpolation_2 from "./lessons/Interpolation_2";
 import WhatsAppProfile from "./lessons/WhatsAppProfile";
-import EasingFunctions from "./lessons/EasingFunctions";
+import AnimatedFunctionsProps from "./lessons/AnimatedFunctionsProps";
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
       {/* <FadeInView /> */}
       {/* <Interpolation_2 /> */}
       {/* <WhatsAppProfile /> */}
-      <EasingFunctions />
+      <AnimatedFunctionsProps />
     </View>
   );
 }
@@ -25,14 +25,7 @@ const styles = StyleSheet.create({
 });
 
 /**
- * 
- *
 
-9. Implementing Linear Easing
-10. Implementing Ease In Easing
-11. Implementing Ease Out Easing
-12. Implementing Ease In Out Easing
-13. Using Animated.spring() Method
 14. Configuring Spring Animation Parameters
 15. Understanding Spring Stiffness
 16. Understanding Spring Damping

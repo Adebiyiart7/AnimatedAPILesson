@@ -1,10 +1,10 @@
 import { Animated, Easing, StyleSheet, Text, View } from "react-native";
 import React, { useEffect, useRef } from "react";
 
-const EasingFunctions = () => {
+const AnimatedFunctionsProps = () => {
   const animatedValue = useRef(new Animated.Value(0)).current;
 
-  // TIMING
+  // 1. TIMING
   //   useEffect(() => {
   //     Animated.timing(animatedValue, {
   //       toValue: 1,
@@ -14,11 +14,23 @@ const EasingFunctions = () => {
   //     }).start();
   //   }, []);
 
-  // SPRING
+  // 2. SPRING
+  // useEffect(() => {
+  //   Animated.spring(animatedValue, {
+  //     toValue: 1,
+  //     friction: 5,
+  //     useNativeDriver: false,
+  //     easing: Easing.linear,
+  //   }).start();
+  // }, []);
+
+  // 3. SPRING PROPS
   useEffect(() => {
     Animated.spring(animatedValue, {
-      toValue: 1,
-      friction: 5,
+      toValue: 1, // final value of the animation
+      velocity: 2, // initial velocity of the animation
+      tension: 100, // controls the "stiffness" of the spring
+      friction: 5, // controls the "damping of the spring"
       useNativeDriver: false,
       easing: Easing.linear,
     }).start();
@@ -38,7 +50,7 @@ const EasingFunctions = () => {
   );
 };
 
-export default EasingFunctions;
+export default AnimatedFunctionsProps;
 
 const styles = StyleSheet.create({
   box: {
