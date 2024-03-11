@@ -5,6 +5,8 @@ import Interpolation_2 from "./lessons/Interpolation_2";
 import WhatsAppProfile from "./lessons/WhatsAppProfile";
 import AnimatedFunctionsProps from "./lessons/AnimatedFunctionsProps";
 import AnimatedDotValueXY from "./lessons/Animated.ValueXY";
+import ParallelAnimation from "./lessons/ParallelAnimation";
+import SequenceAnimation from "./lessons/SequenceAnimation";
 
 export default function App() {
   return (
@@ -15,7 +17,9 @@ export default function App() {
       {/* <Interpolation_2 /> */}
       {/* <WhatsAppProfile /> */}
       {/* <AnimatedFunctionsProps /> */}
-      <AnimatedDotValueXY />
+      {/* <AnimatedDotValueXY /> */}
+      {/* <ParallelAnimation /> */}
+      <SequenceAnimation />
     </View>
   );
 }
@@ -28,13 +32,7 @@ const styles = StyleSheet.create({
 
 /**
 
-24. Creating Parallel Animations
-25. Creating Sequence Animations
-26. Understanding Animated.loop() Method
-27. Implementing Infinite Loop Animations
-28. Creating Delayed Animations
-29. Using Animated.delay() Method
-30. Combining Multiple Animations
+
 31. Using Animated.parallel() Method
 32. Using Animated.sequence() Method
 33. Creating Custom Easing Functions
