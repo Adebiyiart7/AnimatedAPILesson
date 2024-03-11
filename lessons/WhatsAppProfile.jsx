@@ -33,7 +33,6 @@ const WhatsAppProfile = React.memo(() => {
   const imageHeight = scrollY.interpolate({
     inputRange,
     outputRange: [MAX_IMAGE_HEIGHT, MIN_IMAGE_HEIGHT],
-    extrapolate: "clamp",
   });
 
   const imageXInterpolation = scrollY.interpolate({

@@ -9,9 +9,9 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="light" backgroundColor="darkslateblue" />
 
-      {/* <WhatsAppProfile /> */}
+      <WhatsAppProfile />
 
-      <Interpolation_2 />
+      {/* <Interpolation_2 /> */}
       {/* <FadeInView /> */}
     </View>
   );
