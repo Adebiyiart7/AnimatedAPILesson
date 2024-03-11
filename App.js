@@ -3,16 +3,17 @@ import { StyleSheet, View } from "react-native";
 import FadeInView from "./lessons/FadeInView_1";
 import Interpolation_2 from "./lessons/Interpolation_2";
 import WhatsAppProfile from "./lessons/WhatsAppProfile";
+import EasingFunctions from "./lessons/EasingFunctions";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="light" backgroundColor="darkslateblue" />
 
-      <WhatsAppProfile />
-
-      {/* <Interpolation_2 /> */}
       {/* <FadeInView /> */}
+      {/* <Interpolation_2 /> */}
+      {/* <WhatsAppProfile /> */}
+      <EasingFunctions />
     </View>
   );
 }
@@ -20,11 +21,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // paddingTop: 25,
-
-    // backgroundColor: "#fff",
-    // alignItems: "center",
-    // justifyContent: "center",
   },
 });
 
