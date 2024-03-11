@@ -8,6 +8,7 @@ import AnimatedDotValueXY from "./lessons/Animated.ValueXY";
 import ParallelAnimation from "./lessons/ParallelAnimation";
 import SequenceAnimation from "./lessons/SequenceAnimation";
 import LoopAnimation from "./lessons/LoopAnimation";
+import DelayedAnimation from "./lessons/DelayedAnimation";
 
 export default function App() {
   return (
@@ -21,7 +22,8 @@ export default function App() {
       {/* <AnimatedDotValueXY /> */}
       {/* <ParallelAnimation /> */}
       {/* <SequenceAnimation /> */}
-      <LoopAnimation />
+      {/* <LoopAnimation /> */}
+      <DelayedAnimation />
     </View>
   );
 }

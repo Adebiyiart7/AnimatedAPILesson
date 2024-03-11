@@ -14,6 +14,7 @@ const LoopAnimation = () => {
         }),
       ],
       {
+        iterations: 4,
         iterations: -1, // To repeat the animation indefinitely
       }
     ).start();
