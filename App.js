@@ -4,6 +4,7 @@ import FadeInView from "./lessons/FadeInView_1";
 import Interpolation_2 from "./lessons/Interpolation_2";
 import WhatsAppProfile from "./lessons/WhatsAppProfile";
 import AnimatedFunctionsProps from "./lessons/AnimatedFunctionsProps";
+import AnimatedDotValueXY from "./lessons/Animated.ValueXY";
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
       {/* <FadeInView /> */}
       {/* <Interpolation_2 /> */}
       {/* <WhatsAppProfile /> */}
-      <AnimatedFunctionsProps />
+      {/* <AnimatedFunctionsProps /> */}
+      <AnimatedDotValueXY />
     </View>
   );
 }
@@ -26,16 +28,6 @@ const styles = StyleSheet.create({
 
 /**
 
-14. Configuring Spring Animation Parameters
-15. Understanding Spring Stiffness
-16. Understanding Spring Damping
-17. Creating Basic Transform Animations
-18. Scaling Animations with Animated
-19. Rotating Animations with Animated
-20. Translating Animations with Animated
-21. Combining Transform Animations
-22. Creating Fade In and Fade Out Animations
-23. Using Animated.ValueXY for Complex Animations
 24. Creating Parallel Animations
 25. Creating Sequence Animations
 26. Understanding Animated.loop() Method
