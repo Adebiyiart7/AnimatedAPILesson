@@ -1,30 +1,29 @@
-import { Animated, ScrollView, StyleSheet, Text, View } from "react-native";
-import React, { useEffect, useState } from "react";
+import { Animated, ScrollView, StyleSheet, View } from "react-native";
+import React, { useState } from "react";
 
 const Interpolation_2 = () => {
   const [animatedValue] = useState(new Animated.Value(0));
 
   const inputRange = [0, 1];
-  const outputRange = [51, 200];
+  const outputRange = [1, -130];
 
   const interpolatedValue = animatedValue.interpolate({
     inputRange,
     outputRange,
-    // extrapolate: "clamp", // Optional, sets behaviour for values outside input range
   });
 
   const animate = () => {
     Animated.timing(animatedValue, {
       toValue: 1,
-      //   duration: 1000,
+      duration: 1000,
       useNativeDriver: true,
     }).start();
   };
 
-  //   animate();
+  animate();
 
   return (
-    <ScrollView onScroll={() => animate()} style={styles.scroll}>
+    <ScrollView style={styles.scroll}>
       <View style={styles.view}>
         <Animated.View
           style={{
@@ -33,12 +32,12 @@ const Interpolation_2 = () => {
               //   { skewX: interpolatedValue },
               //   { rotate: interpolatedValue },
               // { scale: interpolatedValue },
-              //   { translateY: interpolatedValue },
-              //   { translateX: interpolatedValue },
+              { translateY: interpolatedValue },
+              { translateX: interpolatedValue },
             ],
           }}
         >
-          <View style={{ ...styles.circle, height: interpolatedValue }} />
+          <Animated.View style={{ ...styles.circle, height: 50 }} />
         </Animated.View>
       </View>
     </ScrollView>
