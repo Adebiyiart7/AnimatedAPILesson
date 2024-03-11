@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 /**
  * 
  *
-8. Easing Functions in Animation
+
 9. Implementing Linear Easing
 10. Implementing Ease In Easing
 11. Implementing Ease Out Easing

@@ -4,12 +4,23 @@ import React, { useEffect, useRef } from "react";
 const EasingFunctions = () => {
   const animatedValue = useRef(new Animated.Value(0)).current;
 
+  // TIMING
+  //   useEffect(() => {
+  //     Animated.timing(animatedValue, {
+  //       toValue: 1,
+  //       duration: 1000,
+  //       useNativeDriver: false,
+  //       easing: Easing.bounce,
+  //     }).start();
+  //   }, []);
+
+  // SPRING
   useEffect(() => {
-    Animated.timing(animatedValue, {
+    Animated.spring(animatedValue, {
       toValue: 1,
-      duration: 1000,
+      friction: 5,
       useNativeDriver: false,
-      easing: Easing.bounce,
+      easing: Easing.linear,
     }).start();
   }, []);
 
