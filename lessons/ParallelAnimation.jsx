@@ -6,19 +6,20 @@ const ParallelAnimation = () => {
   const rotateValue = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    // Translate animateion
-    Animated.timing(translateXValue, {
-      toValue: 200, // Translate 200 units horizontally
-      duration: 1000,
-      useNativeDriver: true,
-    }).start();
-
-    // Rotate animation
-    Animated.timing(rotateValue, {
-      toValue: 360, // rotate 360 deg
-      duration: 1000,
-      useNativeDriver: true,
-    }).start();
+    Animated.parallel([
+      // Translate animateion
+      Animated.timing(translateXValue, {
+        toValue: 200, // Translate 200 units horizontally
+        duration: 1000,
+        useNativeDriver: true,
+      }),
+      // Rotate animation
+      Animated.timing(rotateValue, {
+        toValue: 360, // rotate 360 deg
+        duration: 1000,
+        useNativeDriver: true,
+      }),
+    ]).start();
   }, []);
 
   return (

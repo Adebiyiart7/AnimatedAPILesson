@@ -20,10 +20,10 @@ export default function App() {
       {/* <WhatsAppProfile /> */}
       {/* <AnimatedFunctionsProps /> */}
       {/* <AnimatedDotValueXY /> */}
-      {/* <ParallelAnimation /> */}
+      <ParallelAnimation />
       {/* <SequenceAnimation /> */}
       {/* <LoopAnimation /> */}
-      <DelayedAnimation />
+      {/* <DelayedAnimation /> */}
     </View>
   );
 }
